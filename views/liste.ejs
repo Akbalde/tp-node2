@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succès</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4caf50;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Données fournies avec succès !</h1>
+
+    
+     
+        <ul>
+            <li><strong>Nom:</strong> <%= formData.nom || 'N/A' %></li>
+            <li><strong>Prénom:</strong> <%= formData.prenom || 'N/A' %></li>
+            <li><strong>Image:</strong> <%= formData.image ? `<img src="/uploads/${formData.image}" alt="Image" width="100">` : 'N/A' %></li>
+        </ul>
+  
+</body>
+</html>
